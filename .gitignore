@@ -1,0 +1,4 @@
+student_management_venv/
+__pycache__/
+*.pyc
+students.db
