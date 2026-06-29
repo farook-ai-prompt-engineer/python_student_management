@@ -1,33 +1,33 @@
-print("==== STUDENT MANAGEMENT SYSTEM =====")
+while True:
 
-print("1. Add Student")
-print("2. View Students")
-print("3. Update Student")
-print("4. Delete Student")
-print("5. Search Student")
-print("6. Exit")
+    print("\n==== STUDENT MANAGEMENT SYSTEM =====")
+    print("1. Add Student")
+    print("2. View Students")
+    print("3. Update Student")
+    print("4. Delete Student")
+    print("5. Search Student")
+    print("6. Exit")
 
+    choice = input("Enter choice: ")
 
-choice = input("Enter choice: ")
+    if choice == "1":
+        exec(open("add_student.py").read())
 
+    elif choice == "2":
+        exec(open("view_students.py").read())
 
-if choice == "1":
-    import add_student
+    elif choice == "3":
+        exec(open("update_student.py").read())
 
-elif choice == "2":
-    import view_students
+    elif choice == "4":
+        exec(open("delete_student.py").read())
 
-elif choice == "3":
-    import update_student
+    elif choice == "5":
+        exec(open("search_student.py").read())
 
-elif choice == "4":
-    import delete_student
+    elif choice == "6":
+        print("Thank you.")
+        break
 
-elif choice == "5":
-    exec(open("search_student.py").read())
-
-elif choice == "6":
-    print("Thank you")
-
-else:
-    print("invalid choice")
+    else:
+        print("Invalid choice.")

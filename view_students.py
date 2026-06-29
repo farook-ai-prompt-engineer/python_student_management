@@ -14,5 +14,4 @@ print("-----------------------")
 for student in students:
     print(student[0], "\t", student[1], "\t", student[2])
 
-
 connection.close()
